@@ -1,2 +1,0 @@
-# endafoods.github.io
-sample
