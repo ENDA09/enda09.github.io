@@ -32,6 +32,11 @@
         padding-top: 10px;
         /* text-align: left; */
         padding-left: 100;
+        float: left;
+    }
+    .ketik{
+        padding-top: 10px;
+        font-family: Arial, Helvetica, sans-serif;
     }
     .log{
         padding-top: 10px;
@@ -183,6 +188,23 @@
         
         display: none;
     }
+
+    .tugel{
+    position: fixed;
+    width: 150px;
+    top: 330;
+    right: -40;
+    transform: rotate(-90);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    background: red;
+    padding: 10px 30px;
+    border-radius: 5px;
+    }
+    .tugel a{
+        text-decoration: none;
+        color: white;
+    }
     </style>
 </head>
 <body>
@@ -190,6 +212,21 @@
         <div class="head">
             <div class="col-md-6">
                 <p class="telp">Call us for ordering <a href="#"> <b><span class="glyphicon glyphicon-phone-alt">082315487763</span> </b></a></p>
+                
+                <div class="ketik">
+                    <span id="typed">
+                </div>
+                    <!--Add Typed Js-->
+                <script src="http://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+                <script>
+                    var typed= new Typed("#typed",{
+                        strings :["Hallo enda","Hallo Kawan Kebab MungilQu","SELAMAT BERBELANJA"],
+                        typeSpeed:40,
+                        loop:true
+                    });
+                </script>
+        
+
             </div>
             <div class="col-md-6">
                 <p class="log">Login</p>
@@ -359,6 +396,8 @@
                     </div>
                 </div>
             </div>
+
+            
             <div class="moreproduct">
                 <div class="row">
                     <div class="col-md-6">
@@ -556,7 +595,7 @@
             <h3>Testimoni</h3> <hr>
             <div class="col-sm-6">
                 <div class="video" style="overflow: hidden">
-                    <video src="video/testi.mp4" controls width="300" height="200">Rizal Armada</video>
+                    <!-- <video src="video/testi.mp4" controls width="300" height="200">Rizal Armada</video> -->
                 </div>
             </div>
             <div class="col-sm-6" style="text-align: left">
@@ -566,6 +605,9 @@
             </div>
         </div>
 
+        <div class="tugel">
+            <b><a href="#">CEK PROMO</a></b>
+        </div>
      
         <div class="footer">
             <div class="tengah">
